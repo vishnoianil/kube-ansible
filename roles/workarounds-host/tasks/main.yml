@@ -1,0 +1,6 @@
+- name: Reload dnsmasq config, so that VM's DNS cache can be refreshed.
+  block:
+    - debug:
+        msg: "Reloading dnsmasq config."
+    - name: Reload dnsmasq config
+      command: pkill -HUP dnsmasq

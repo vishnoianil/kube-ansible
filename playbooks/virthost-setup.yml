@@ -6,3 +6,4 @@
 
   roles:
     - { role: redhat-nfvpe.vm-spinup }
+    - { role: workarounds-host }
